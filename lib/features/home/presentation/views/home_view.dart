@@ -1,6 +1,8 @@
 import 'package:doctor_app/core/widgets/custom_bottom_nav_bar.dart';
 import 'package:doctor_app/features/calendar/presentation/views/calendar_view.dart';
+import 'package:doctor_app/features/chat/presentation/views/chat_view.dart';
 import 'package:doctor_app/features/home/presentation/views/widgets/home_view_body.dart';
+import 'package:doctor_app/features/profile/presentation/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -29,8 +31,8 @@ class _HomeViewState extends State<HomeView> {
         children: const [
           HomeViewBody(),
           CalendarView(),
-          Center(child: Text('Calendar2')),
-          Center(child: Text('Calendar3')),
+          ChatView(),
+          ProfileView(),
         ],
       ),
       bottomNavigationBar: CustomBottomNavigationBar(

@@ -10,6 +10,7 @@ class CustomHomeViewAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: EdgeInsets.zero,
       title: Text(
         'Hello,',
         style: TextStyles.font20Regular(context)
