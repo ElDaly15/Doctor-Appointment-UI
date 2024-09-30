@@ -47,21 +47,21 @@ class NearstDoctorItem extends StatelessWidget {
                 child: Text(
                   'Dental Specialist',
                   style: TextStyles.font20Regular(context).copyWith(
-                    color: Color(0xff8696BB),
+                    color: const Color(0xff8696BB),
                   ),
                 ),
               ),
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.location_on_outlined,
                     color: Color(0xff8696BB),
                   ),
                   Text(
                     '1.2 km',
                     style: TextStyles.font18Regular(context).copyWith(
-                      color: Color(0xff8696BB),
+                      color: const Color(0xff8696BB),
                     ),
                   ),
                 ],
@@ -72,7 +72,7 @@ class NearstDoctorItem extends StatelessWidget {
             endIndent: 25,
             indent: 25,
           ),
-          RowOfDoctorDetailsInfo(
+          const RowOfDoctorDetailsInfo(
             firstText: '4.8 (120 reviews)',
             fistIcon: Icons.watch_later_outlined,
             colorsFirst: Color(0xffFEB052),

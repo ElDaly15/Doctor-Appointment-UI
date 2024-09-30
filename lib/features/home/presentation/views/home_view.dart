@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/widgets/custom_bottom_nav_bar.dart';
+import 'package:doctor_app/features/calendar/presentation/views/calendar_view.dart';
 import 'package:doctor_app/features/home/presentation/views/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class _HomeViewState extends State<HomeView> {
         physics: const NeverScrollableScrollPhysics(),
         children: const [
           HomeViewBody(),
-          Center(child: Text('Calendar')),
+          CalendarView(),
           Center(child: Text('Calendar2')),
           Center(child: Text('Calendar3')),
         ],

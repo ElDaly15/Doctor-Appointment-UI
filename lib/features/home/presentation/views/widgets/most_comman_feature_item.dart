@@ -1,8 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
 import '../../../../../core/utils/text_styles.dart';
 
 class MostCommanFeatureItem extends StatelessWidget {
@@ -17,7 +14,7 @@ class MostCommanFeatureItem extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 35,
-          backgroundColor: Color(0xffFAFAFA),
+          backgroundColor: const Color(0xffFAFAFA),
           child: SvgPicture.asset(
             image,
             width: 30,
