@@ -4,7 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({super.key});
+  final Function(int) onTap; // Add this line
+
+  const CustomBottomNavigationBar(
+      {super.key, required this.onTap}); // Update constructor
 
   @override
   State<CustomBottomNavigationBar> createState() =>
@@ -47,11 +50,11 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         setState(() {
           currentIndex = index;
         });
+        widget.onTap(index); // Call the callback function
       },
       child: AnimatedSwitcher(
         duration: const Duration(milliseconds: 300),
         transitionBuilder: (Widget child, Animation<double> animation) {
-          // Define the scale animation
           final scaleAnimation =
               Tween<double>(begin: 0.8, end: 1.0).animate(animation);
           final opacityAnimation =
