@@ -4,6 +4,7 @@ import 'package:doctor_app/core/utils/text_styles.dart';
 import 'package:doctor_app/features/home/presentation/views/widgets/custom_home_view_app_bar.dart';
 import 'package:doctor_app/features/home/presentation/views/widgets/custom_search_text_field.dart';
 import 'package:doctor_app/features/home/presentation/views/widgets/doctor_details_item.dart';
+import 'package:doctor_app/features/home/presentation/views/widgets/near_doctor_header.dart';
 import 'package:doctor_app/features/home/presentation/views/widgets/nearst_doctor_item.dart';
 import 'package:doctor_app/features/home/presentation/views/widgets/row_of_most_comman_featuers.dart';
 import 'package:flutter/material.dart';
@@ -47,16 +48,5 @@ class HomeViewBody extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class NearDoctorHeader extends StatelessWidget {
-  const NearDoctorHeader({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text('Near Doctor',
-        style: TextStyles.font18SemiBold(context)
-            .copyWith(color: AppColors.textMainTitles));
   }
 }
