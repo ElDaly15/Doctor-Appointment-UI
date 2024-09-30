@@ -11,8 +11,8 @@ class Assets {
   static const String imagesCalendar = "assets/images/calendar.svg";
 
   /// Assets for imagesDoctor1
-  /// assets/images/doctor1.svg
-  static const String imagesDoctor1 = "assets/images/doctor1.svg";
+  /// assets/images/doctor1.png
+  static const String imagesDoctor1 = "assets/images/doctor1.png";
 
   /// Assets for imagesDoctor2
   /// assets/images/doctor2.svg
