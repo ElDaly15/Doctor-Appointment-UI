@@ -16,8 +16,8 @@ class MostCommanFeatureItem extends StatelessWidget {
     return Column(
       children: [
         CircleAvatar(
-          radius: 42,
-          backgroundColor: const Color.fromARGB(255, 243, 241, 241),
+          radius: 35,
+          backgroundColor: Color(0xffFAFAFA),
           child: SvgPicture.asset(
             image,
             width: 30,

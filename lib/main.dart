@@ -4,8 +4,7 @@ import 'package:doctor_app/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-      DevicePreview(enabled: false, builder: (context) => const DoctorApp()));
+  runApp(DevicePreview(enabled: true, builder: (context) => const DoctorApp()));
 }
 
 class DoctorApp extends StatelessWidget {

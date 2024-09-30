@@ -52,7 +52,14 @@ class DoctorDetailsItem extends StatelessWidget {
             endIndent: 25,
             indent: 25,
           ),
-          const RowOfDoctorDetailsInfo(),
+          const RowOfDoctorDetailsInfo(
+            colorsFirst: Colors.white,
+            colorsSecond: Colors.white,
+            firstText: 'Sunday, 12 June',
+            secondText: '09:00 AM - 11:00 AM',
+            fistIcon: Icons.calendar_today,
+            secondIcon: Icons.watch_later_outlined,
+          ),
         ],
       ),
     );

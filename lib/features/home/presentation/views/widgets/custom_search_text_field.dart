@@ -22,7 +22,7 @@ class CustomSearchTextField extends StatelessWidget {
           ),
         ),
         filled: true,
-        fillColor: const Color.fromARGB(255, 243, 241, 241),
+        fillColor: const Color(0xffFAFAFA),
         hintText: 'Search doctor or health issue',
         hintStyle: TextStyles.font18Medium(context).copyWith(
           color: const Color(0xff8696BB),
