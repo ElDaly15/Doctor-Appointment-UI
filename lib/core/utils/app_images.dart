@@ -53,4 +53,5 @@ class Assets {
   /// Assets for imagesSun
   /// assets/images/sun.svg
   static const String imagesSun = "assets/images/sun.svg";
+  static const String searchIcon = "assets/images/search_icon.svg";
 }
